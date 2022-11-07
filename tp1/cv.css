@@ -1,0 +1,46 @@
+
+
+        body {
+            
+            background-color: rgb(16, 28, 66);
+            font-family: fantasy;
+        }
+        h1   {color: white;}
+        p    {
+            
+            color: white;
+            font-size: 20px;
+        }
+        table {color:black;}
+
+        a {
+            color: yellow;
+          }
+        
+        table {
+
+            color:white;
+        }
+
+        tr {
+
+            color:white;
+        }
+        
+        th {
+
+            color:white;
+            font-size: 30px;
+          
+           
+        }
+
+        td {
+
+            color:white;
+            padding: 15px;
+            font-size: 20px;
+            text-align: center;
+            
+        }
+
