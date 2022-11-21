@@ -1,39 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <script src="js/bootstrap.bundle.js"></script>
-        <script src="js/form-validation.js"></script>    
+<head>
+    <style>
+    #nom{}
+    #prénom{}
+    #date{}
+    #adresse{}
+    #email{}
+    #button{}
+
+
+    #myModal{
+
+      position:fixed;
+      top:50%;
+      left: 50%;
+      transform:translate(-50%, -50%);
+    }
+
+
+
+
+    </style>
+
     
-    </head>
+ 
+
+    
+
+    <!-- CSS boostrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- librairie Javascript de boostrap pour pouvoir utiliser les composants interactifs (modal https://getbootstrap.com/docs/5.1/components/modal/ , collapse...) -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/form-validation.js" defer></script>
+</head>
+
 <body>
-    <div class="container">
-        <h1>TP 3 avec Bootstrap</h1>
-        <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nom">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Prénom">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Date</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="JJ/MM/AAAA">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Adresse</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Adresse">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Email</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
-          </div>
 
-          <button type="button" class="btn btn-primary">Primary</button>
+    <div class="container" >
+        <!-- Content here -->
+        <h1>TP AW</h1>
+        <br>
+        <h2>Avec Bootstrap 5</h2>
+        <br>
+        <form>
+            <div class="row mb-3">
+                <label for="nom" class="col-sm-2 col-form-label">Nom</label>
+                <div class="col-sm-10">
+                  <input type="text"
+                class="form-control" 
+                  id="nom" 
+                  type="text"
+                  placeholder="Nom">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="prénom" class="col-sm-2 col-form-label">Prénom</label>
+                <div class="col-sm-10">
+                  <input type="text" 
+                  class="form-control" 
+                  id="prénom"
+                  type="text"
+                 placeholder="Prénom">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="date" class="col-sm-2 col-form-label">Date de naissance</label>
+                <div class="col-sm-10">
+                  <input type="date" class="form-control" id="date" placeholder="JJ/MM/AAAA" >
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="adresse" class="col-sm-2 col-form-label">Adresse</label>
+                <div class="col-sm-10">
+                  <input type="text" 
+                  class="form-control" 
+                  id="adresse"
+                  type="text"
+                  placeholder="Adresse"
+                  />
+                </div>
+              </div>
+            <div class="row mb-3">
+              <label for="email" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" 
+                class="form-control" 
+                id="email"
+                placeholder="Email" >
+              
+              </div>
+            </div>
+            
+              
+            <button type="button" class="btn btn-primary"  onclick="test()" >Valider</button>
+          </form>
 
+
+
+
+      </div>
+     
+
+
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+               
+            </div>
+          </div>
         </div>
-         
+      </div>
+
+
+
+
+
+
+</body>
 
 
 
@@ -41,6 +133,4 @@
 
 
 
-
-    </body>
 </html>
