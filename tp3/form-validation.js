@@ -5,7 +5,7 @@
  let nowTimestamp = Date.now()
  */
 var myModal = new bootstrap.Modal(document.getElementById('myModal'));
-myModal.show();
+//myModal.show();
 
 //var button = new bootstrap.button(document.getElementById('button'));
 
