@@ -129,15 +129,7 @@ function validateEmail(mail) {
     let e = document.getElementById("mail").value;
     let da = document.getElementById("date").value;
 
-    document.querySelector("table tbody").innerHTML =
-    "<tr>" +
-    "<th> Nom</th>" +
-    "<th> Prénom</th>" +
-    "<th> Date de naissance</th>" +
-    "<th> Adresse</th>" +
-    "<th> Mail</th>" +
-    "</tr>" ;
-
+    
     if (n.length < 5 || p.length < 5 || a.length < 5 || validateEmail(e) == false || testDate(da) == false) {
 
         document.querySelector(".modal-title").textContent = "Erreur";
